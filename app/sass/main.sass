@@ -1,0 +1,398 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.clearfix
+	display: block
+	content: ""
+	clear: both
+
+
+.col
+	position: relative
+	float: left
+
+
+.col__left
+	width: 255px
+	height: 100%
+	padding: 20px 0 0 20px
+
+
+.col__center
+	width: 560px
+
+
+.col__right
+	height: 100%
+	width: 151px
+	text-align: center
+
+
+.banner-wrap
+	width: 970px
+	height: 250px
+	border: 1px solid #000
+
+
+
+.phone-wrap
+	position: relative
+	display: inline-block
+	width: 514px
+	height: 221px
+	overflow: hidden
+	margin: 12px 0 0 5px
+
+
+input[type=range]
+	-webkit-appearance: none
+
+
+
+input[type=range]::-webkit-slider-thumb
+	-webkit-appearance: none
+
+
+input[type=range]:focus
+	outline: none
+
+
+input[type=range]::-ms-track
+	cursor: pointer
+	background: transparent
+	border-color: transparent
+	color: transparent
+
+
+input[type=range]::-webkit-slider-thumb
+	-webkit-appearance: none
+	border: 1px solid #000000
+	height: 16px
+	width: 16px
+	border-radius: 50%
+	background: #000
+	cursor: pointer
+	margin-top: -8px
+
+
+/* Firefox */
+input[type=range]::-moz-range-thumb
+	border: 1px solid #000000
+	height: 16px
+	width: 16px
+	border-radius: 50%
+	background: #000
+	cursor: pointer
+
+
+/* IE */
+input[type=range]::-ms-thumb
+	border: 1px solid #000000
+	height: 16px
+	width: 16px
+	border-radius: 50%
+	background: #000
+	cursor: pointer
+
+
+
+input[type=range]::-webkit-slider-runnable-track
+	width: 100%
+	height: 1px
+	cursor: pointer
+	background: #ccc
+	border-radius: 1.3px
+
+
+
+input[type=range]:focus::-webkit-slider-runnable-track
+	background: #ccc
+
+
+
+.input-range
+	display: inline-block
+	position: absolute
+	top: 123px
+	right: -63px
+	transform: rotate(90deg)
+	z-index: 5
+	width: 190px
+
+
+.logo
+	display: block
+	width: 70px
+
+.logo-model
+	display: block
+	width: 200px
+
+
+.close-add
+	position: absolute
+	right: 0
+	top: 0
+	font-family: "Segoe UI", Arial, sans-serif
+	font-size: 12px
+	text-decoration: underline
+	padding-right: 19px
+	cursor: pointer
+
+
+.close-add:after
+	content: '×'
+	position: absolute
+	right: 0
+	top: 2px
+	width: 12px
+	height: 13px
+	line-height: 9px
+	border: 1px solid #000
+	border-radius: 1px
+	font-weight: bold
+
+
+.drag-info
+	display: block
+	margin-top: 25px
+	font-size: 12px
+	font-family: "Segoe UI", Arial, sans-serif
+	text-transform: uppercase
+
+
+.bye-img
+	position: absolute
+	margin: 0 auto
+	left: 0
+	right: 0
+	bottom: 20px
+	width: 110px
+	cursor: pointer
+
+
+.info
+	position: absolute
+	font-size: 30px
+	width: 227px
+	bottom: 45px
+	left: 20px
+	line-height: 30px
+	font-family: "Segoe UI Light", Arial, sans-serif
+
+
+.pic
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+
+
+.video
+	position: absolute
+	top: 10px
+	left: 77px
+	z-index: 1
+
+
+.borders
+	position: absolute
+	top: 0
+	left: 1px
+	z-index: 2
+
+
+.drop
+	position: absolute
+	width: 30px
+	height: 30px
+	z-index: 100
+	opacity: 0
+
+
+.drop1
+	top: 50px
+	left: 120px
+	animation-delay: 2s
+	background: url('../img/raindrop_1.png') no-repeat
+
+
+.drop2
+	top: 20px
+	right: 20px
+	animation-delay: 0.5s
+	background: url('../img/raindrop_2.png') no-repeat
+
+
+.drop3
+	top: 30px
+	right: 100px
+	animation-delay: 1s
+	background: url('../img/raindrop_3.png') no-repeat
+
+
+.drop4
+	top: 90px
+	right: 150px
+	animation-delay: 0.5s
+	background: url('../img/raindrop_4.png') no-repeat
+
+
+.drop5
+	top: 120px
+	right: 250px
+	animation-delay: 0.5s
+	background: url('../img/raindrop_1.png') no-repeat
+
+
+.drop6
+	top: 95px
+	left: 120px
+	animation-delay: 1.2s
+	background: url('../img/raindrop_2.png') no-repeat
+
+
+.drop7
+	top: 120px
+	right: 20px
+	animation-delay: 0.7s
+	background: url('../img/raindrop_2.png') no-repeat
+
+
+.drop8
+	top: 230px
+	right: 100px
+	animation-delay: .8s
+	background: url('../img/raindrop_3.png') no-repeat
+
+
+.drop-animate
+	animation-name: drops
+	animation-timing-function: ease-in
+	animation-duration: 1s
+	animation-iteration-count: 3
+
+
+@keyframes drops
+	from
+		opacity: 1
+		transform: scale(1.5)
+
+	50%,60%
+		opacity: 1
+		transform: scale(1.0)
+
+	to
+		opacity: 1
+		transform: translateY(200px) scale(0.3)
+
+
+
+.flash
+	display: none
+	position: absolute
+	width: 150px
+	height: 150px
+	background: url('../img/flash.png') no-repeat
+	background-size: contain
+	top: -5px
+	left: 25px
+	z-index: 100
+	animation: flash 0.2s ease-in
+	opacity: 0
+
+
+
+@keyframes flash
+	from
+		opacity: 1
+		transform: scale(0.1)
+
+	to
+		opacity: 1
+		transform: scale(5)
+
+
+
+
+.clip
+	position: absolute
+	left: 78px
+	top: 137px
+	opacity: 0
+	z-index: 2
+
+
+.card-flash
+	display: none
+	position: absolute
+	height: 37px
+	transform: rotate(-34deg)
+	left: 85px
+	top: 147px
+	opacity: 0
+	z-index: 2
+	animation: card-flash 0.2s ease-in
+	animation-iteration-count: 2
+	animation-delay: 1s
+
+
+@keyframes card-flash
+	from
+		opacity: 1
+
+	to
+		opacity: 1
+		top: 137px
+		left: 115px
+
+
+
+@import "media" // Всегда в конце
